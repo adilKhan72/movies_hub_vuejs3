@@ -111,3 +111,13 @@ export default {
   }),
 };
 </script>
+<style>
+#app {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #282f36;
+  margin-top: 30px;
+}
+</style>
