@@ -25,6 +25,11 @@
                     </h3>
                    <p>
                     <span class="badge default-color" style="background-color:white;"><small>{{ getmoviebyid.tagline }}</small></span>
+                    <span style="color:white; margin-left: 10px;"> <small>Genres :</small>   </span>    
+                    <span 
+                    v-for="genres in getmoviebyid.genres"
+                    :key="genres.id" 
+                    class="badge default-color" style="background-color: #a2a2a2; margin-left: 5px; color: white;"><small>{{ genres.name }}</small></span>
                     </p>
                 </div>
             </div>
@@ -45,8 +50,11 @@
                     </small>
                 </div>
                 <div class="col-sm-3">
+                    
+                    <font-awesome-icon icon="fa-solid fa-thumbs-up" />
+
                     <small>
-                        Score : {{ getmoviebyid.vote_average }}
+                        Vote :  {{ getmoviebyid.vote_count }} ( {{ getmoviebyid.vote_average }}% )
                     </small>
                 </div>
             </div>
@@ -68,7 +76,6 @@ export default {
   methods: {
 
     getMovieDetails(id) {
-        console.log("from component : "+id);
         this.$store.dispatch("getMovieDetails", {
         id: id,
         });

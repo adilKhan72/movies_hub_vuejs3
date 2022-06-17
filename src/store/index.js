@@ -67,6 +67,7 @@ export default createStore({
       commit("movieByIdEmpty", payload)
       axios("https://api.themoviedb.org/3/movie/"+payload.id+"?api_key="+state.api_key+"&language=en-US").then(response => {
       commit("movieById", response.data)
+      console.log(response.data);
       });
     },
 
