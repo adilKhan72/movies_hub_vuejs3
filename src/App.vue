@@ -26,22 +26,9 @@
             >
           </li>
         </ul>
-        <!-- <form class="d-flex"> -->
-          <!-- <input v-on:keyup="search($event)"
-            class="form-control me-2"
-            type="search"
-            placeholder="Enter Keywords..."
-            aria-label="Search"
-          /> -->
           <button type="button" class="btn button-default" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
             <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
           </button>
-          <!-- <button class="btn button-default" type="submit">
-            <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
-          </button> -->
-        <!-- </form> -->
-
-
       </div>
     </div>
   </nav>
@@ -58,8 +45,6 @@
           />
       </div>
       <div class="modal-body">
-        
-
         <div  v-for="movie in searchedMovies.results"
           :key="movie.id" 
           class="card mb-3">
