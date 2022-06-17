@@ -21,8 +21,8 @@
             <router-link to="/" class="nav-link">Home</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/comming_soon" class="nav-link"
-              >Comming Soon</router-link
+            <router-link to="/states" class="nav-link"
+              > States </router-link
             >
           </li>
         </ul>
