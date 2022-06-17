@@ -23,6 +23,9 @@ export default createStore({
     movieByIdEmpty(state) {
       state.moviebyid = {};
     },
+    voteUp(state) {
+      state.moviebyid.vote_count = state.moviebyid.vote_count += 1;
+    },
     movieById(state, movies) {
       state.moviebyid = movies;
     },
@@ -63,6 +66,11 @@ export default createStore({
     }
   },
   actions: {
+
+    voteUp({commit}, payload) {
+      commit("voteUp", payload.id)
+    },
+
     getMovieDetails({state, commit}, payload) {
       commit("movieByIdEmpty", payload)
       axios("https://api.themoviedb.org/3/movie/"+payload.id+"?api_key="+state.api_key+"&language=en-US").then(response => {

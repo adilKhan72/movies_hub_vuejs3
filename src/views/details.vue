@@ -50,8 +50,8 @@
                     </small>
                 </div>
                 <div class="col-sm-3">
-                    
-                    <font-awesome-icon icon="fa-solid fa-thumbs-up" />
+
+                    <font-awesome-icon @click="voteUp(getmoviebyid.id)" style="cursor: pointer;" icon="fa-solid fa-thumbs-up" />
 
                     <small>
                         Vote :  {{ getmoviebyid.vote_count }} ( {{ getmoviebyid.vote_average }}% )
@@ -74,7 +74,11 @@ import { mapState } from "vuex";
 export default {
   name: "Details",
   methods: {
-
+    voteUp(id) {
+      this.$store.dispatch("voteUp", {
+        id: id,
+      });
+    },
     getMovieDetails(id) {
         this.$store.dispatch("getMovieDetails", {
         id: id,
