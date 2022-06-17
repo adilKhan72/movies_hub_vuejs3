@@ -16,7 +16,7 @@
 ### Each page in the project can be divided into components but again due to time constraint i could not do it.
 ### Search and Filters Functionality Implemented.
 ### This project has Alot of space for Improvement e.g : router history, better design, more progressive and responsive, Making individual components, Pagination through routing, etc
-### 
+### GitHub URL : https://github.com/adilKhan72/movies_hub_vuejs3
 ### 
 ### 
 # moveisapp
