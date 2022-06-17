@@ -18,7 +18,7 @@
 ### This project has Alot of space for Improvement e.g : router history, better design, more progressive and responsive, Making individual components, Pagination through routing, etc
 ### GitHub URL : https://github.com/adilKhan72/movies_hub_vuejs3
 ### Rating Functionality is added to the to the details page but its static as i cannot find an api to upvote it.
-### 
+### Example Chart is added to the project
 # moveisapp
 
 ## Project setup
